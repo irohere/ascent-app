@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard | The Ascent</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+<body class="app-body">
+    <div id="app-container">
+        <aside class="sidebar">
+            <div class="logo">🚀 Ascent</div>
+            <nav class="sidebar-nav">
+                <a href="#" class="active">🏠 Dashboard</a>
+                <a href="#" onclick="alert('Analytics page coming soon!');">📊 Analytics</a>
+                <a href="#" onclick="alert('Goals page coming soon!');">🎯 Goals</a>
+                <a href="index.html">🚪 Exit to Landing</a>
+            </nav>
+            <div class="user-profile">
+                <span>Welcome, Achiever!</span>
+                <button id="reset-progress-btn">Reset Progress</button>
+            </div>
+        </aside>
+
+        <main class="main-content">
+            <header class="app-header">
+                <div>
+                    <h1>Today's Ascent</h1>
+                    <p id="current-date">Let's make today count.</p>
+                </div>
+                <div class="user-stats">
+                    <div class="stat">
+                        <span id="points-display">🔥 0 Points</span>
+                    </div>
+                    <div class="stat">
+                        <span id="streak-display">⚡ 0 Day Streak</span>
+                    </div>
+                </div>
+            </header>
+
+            <div class="dashboard-grid">
+                <div class="grid-item tall-item">
+                    <h3>Daily Mission</h3>
+                    <div id="task-list">
+                        <!-- Tasks will be dynamically populated here by JavaScript -->
+                    </div>
+                </div>
+                <div class="grid-item">
+                     <h3>Focus Analysis</h3>
+                     <div class="chart-placeholder">
+                         <p>Your analytics will appear here in a future update.</p>
+                     </div>
+                </div>
+                <div class="grid-item">
+                     <h3>My 6-Month Goal</h3>
+                     <div class="goal-card">
+                         <p>"I will master a new skill by dedicating one hour of focused learning every single day."</p>
+                     </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    
+    <script src="app.js"></script>
+</body>
+</html>
